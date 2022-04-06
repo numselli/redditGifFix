@@ -1,0 +1,14 @@
+# docker-compose.yml
+version: "3"
+
+volumes:
+  redditGifFix:
+    external: true
+
+services:
+  bot:
+    restart: unless-stopped
+    build: ./src
+    volumes:
+      - redditGifFix:/config
+    container_name: CountingBot
