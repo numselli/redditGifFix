@@ -11,4 +11,4 @@ services:
     build: ./src
     volumes:
       - redditGifFix:/config
-    container_name: CountingBot
+    container_name: redditGifFixBot
